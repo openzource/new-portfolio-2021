@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import GatsbyImage from "gatsby-image"
+import Card from "../components/Card"
 
 const IndexPage = () => (
   <Layout>
@@ -48,7 +49,27 @@ const IndexPage = () => (
             />
             </path>
         </svg>
-
+      </div>
+      <div className="Cards">
+        <h2>Portafolio de trabajo</h2>
+        <div className="CardGroup">
+        <Card 
+          title="Farmguard.io"
+          text="WEB"
+          image={require('../images/2020.jpg')} />
+          <Card 
+          title="Awto Chile"
+          text="Product Design UI/UX"
+          image={require('../images/2020.jpg')} />
+          <Card 
+          title="Kaufmann"
+          text="Product Design / UI"
+          image={require('../images/2020.jpg')} />
+          <Card 
+          title="Mine Dust Dashboard"
+          text="WEB / UI Design"
+          image={require('../images/2020.jpg')} />
+        </div>
       </div>
     </div>
     
